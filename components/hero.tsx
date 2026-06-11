@@ -70,7 +70,7 @@ export function Hero() {
             {['Legend energy', 'Joy incoming', 'Cake secured'].map((item) => (
               <div
                 key={item}
-                className="rounded-[8px] border border-white/14 bg-white/[0.08] px-4 py-3 text-sm font-extrabold uppercase tracking-[0.14em] text-white/88 backdrop-blur"
+                className="rounded-[8px] border border-white/14 bg-white/8 px-4 py-3 text-sm font-extrabold uppercase tracking-[0.14em] text-white/88 backdrop-blur"
               >
                 {item}
               </div>
@@ -79,7 +79,7 @@ export function Hero() {
         </div>
 
         <div
-          className="relative mx-auto aspect-square w-full max-w-[560px] opacity-0 anim-fade-up lg:ml-auto"
+          className="relative mx-auto aspect-square w-full max-w-140 opacity-0 anim-fade-up lg:ml-auto"
           style={{ animationDelay: '0.4s' }}
         >
           <div
@@ -90,7 +90,7 @@ export function Hero() {
             aria-hidden="true"
             className="party-orbit party-orbit-reverse absolute inset-10 rounded-full border border-dashed border-[#00e5d6]/35"
           />
-          <div className="absolute left-1/2 top-1/2 aspect-square w-[78%] -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-full border-[10px] border-white/12 bg-white/10 shadow-[0_40px_120px_rgba(0,0,0,0.45)]">
+          <div className="absolute left-1/2 top-1/2 aspect-square w-[78%] -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-full border-10 border-white/12 bg-white/10 shadow-[0_40px_120px_rgba(0,0,0,0.45)]">
             <Image
               src="/memories/memory-2.png"
               alt="Birthday cake glowing with candles"
