@@ -40,16 +40,15 @@ const extraVideos = [
 ]
 
 const photoSlides = [
-  { src: '/one.jpeg', title: 'Memory one', caption: 'A frame for the archive.' },
-  { src: '/two.jpeg', title: 'Memory two', caption: 'Soft proof of the day.' },
-  { src: '/three.jpeg', title: 'Memory three', caption: 'A little golden still.' },
-  { src: '/four.jpeg', title: 'Memory four', caption: 'The kind of picture that stays.' },
-  { src: '/five.jpeg', title: 'Memory five', caption: 'Birthday light, kept properly.' },
-  { src: '/six.jpeg', title: 'Memory six', caption: 'Another reason to smile back.' },
-  { src: '/seven.jpeg', title: 'Memory seven', caption: 'A clean one for the reel.' },
-  { src: '/eight.jpeg', title: 'Memory eight', caption: 'Small moment, big feeling.' },
-  { src: '/nine.jpeg', title: 'Memory nine', caption: 'One more for the family record.' },
-  { src: '/ten.jpeg', title: 'Memory ten', caption: 'The closer, sealed in gold.' },
+  { src: '/nine.jpeg', title: 'Memory one', caption: 'Baby Beevol ☺️.' },
+  { src: '/five.jpeg', title: 'Memory two', caption: 'When we were young 😀.' },
+  { src: '/eight.jpeg', title: 'Memory eight', caption: 'When we were young: Christmas (Feeling fly) 😂' },
+  { src: '/three.jpeg', title: 'Memory three', caption: 'The last sallah break ❤️.' },
+  { src: '/four.jpeg', title: 'Memory four', caption: 'Sun kissed.' },
+  { src: '/two.jpeg', title: 'Memory five', caption: 'Show me your 16 😁' },
+  { src: '/six.jpeg', title: 'Memory six', caption: `Mum's Favourite Boy 😀` },
+  { src: '/seven.jpeg', title: 'Memory seven', caption: 'Jury, Jurer, Jurest 🫡.' },
+  { src: '/one.jpeg', title: 'Memory nine', caption: 'The smile that makes me happy 🥹' }
 ]
 
 export function BirthdayExperience() {
@@ -161,10 +160,9 @@ export function BirthdayExperience() {
       )}
 
       <section className="birthday-shell">
-        <div className="birthday-kicker">Beevol turns 21</div>
 
         <div className="birthday-hero">
-          <p className="birthday-count">from Sis Bibi</p>
+          <p className="birthday-count">Beevol turns 21 · 15th June</p>
           <h1>
             <span>Happy 21st,</span>
             <span>Beevol.</span>
@@ -260,9 +258,9 @@ export function BirthdayExperience() {
       </section>
 
       <section className="birthday-shell birthday-shell-note">
-        <div className="slide-header">
+        <div className="slide-header flex flex-col">
           <p>A note from Sis Bibi</p>
-          <span>{Math.round(slideValue)}%</span>
+          <span>{Math.round(slideValue)}% Revealed</span>
         </div>
 
         <div
@@ -286,27 +284,32 @@ export function BirthdayExperience() {
             style={{ '--progress': `${slideValue}%` } as CSSProperties}
           />
 
-          <div className="note-paper" aria-live="polite">
+<div className="note-paper font-im-fell" aria-live="polite">
             {noteOpen ? (
-              <>
-                <p className="note-name">Beevol,</p>
-                <p>
-                  I don't say it every day, but I am proud of you. Twenty one is
-                  a strange age: old enough for people to expect strength, still
-                  young enough to be figuring out what kind of man you want to
-                  become.
-                </p>
-                <p>
-                  My wish for you is simple. May this year give you courage
-                  without making you hard, success without taking your joy, and
-                  people who see the real you without needing a performance.
-                </p>
-                <p>
-                  Keep your head clear. Keep your heart alive. Walk into this
-                  year like your name belongs in better rooms, because it does.
-                </p>
-                <p className="note-signature">Love, Sis Bibi</p>
-              </>
+          <>
+          <p className="note-name">Beevol,</p>
+          <p>
+            Twenty one looks so good on you. I want you to know that watching you
+            grow into the man you are has been one of the greatest joys of my life.
+            You are kind in ways that matter, strong in ways that last, and sweeter
+            than you probably realise.
+          </p>
+          <p>
+            You make me proud every single day — not just for what you achieve, but
+            for who you are when no one is watching. The way you carry yourself,
+            the way you love the people around you, the way you show up. That is
+            everything.
+          </p>
+          <p>
+            This year is going to be so good to you. Better rooms, bigger wins,
+            and all the things your heart has been quietly working toward. You
+            deserve every single one of them.
+          </p>
+          <p>
+            Happy birthday, my brother. I am so glad you are mine.
+          </p>
+          <p className="note-signature">Love, Sis Bibi</p>
+        </>
             ) : (
               <div className="note-cover">
                 {candlesBlown
@@ -427,7 +430,7 @@ export function BirthdayExperience() {
           <div className="slider-dots" aria-label="Choose a photo">
             {photoSlides.map((photo, index) => (
               <button
-                key={photo.src}
+              key={photo.title}
                 type="button"
                 aria-label={`Show ${photo.title}`}
                 aria-current={activePhotoIndex === index}

@@ -259,6 +259,8 @@
   flex-direction: column;
   justify-content: flex-start;
   padding: 24px 18px;
+  text-align: center;
+  align-items: center;
 }
 
 .birthday-kicker,
@@ -279,6 +281,7 @@
 
 .birthday-count {
   color: #f2bc53;
+
 }
 
 .birthday-hero h1 {
@@ -661,7 +664,7 @@
   display: block;
   height: 1px;
   margin-top: 16px;
-  background: linear-gradient(90deg, #f8c64e, rgba(111, 143, 131, 0.65), transparent);
+  background: linear-gradient(90deg, transparent, #f8c64e, rgba(111, 143, 131, 0.65), transparent);
 }
 
 .candle {
@@ -748,12 +751,18 @@
   color: rgba(246, 238, 223, 0.68);
   font-size: 0.98rem;
   line-height: 1.7;
+  text-align: center;
 }
 
 .birthday-shell-note {
+  align-items: stretch;
   min-height: auto;
   padding-top: 34px;
   padding-bottom: 48px;
+}
+
+.birthday-shell:first-of-type {
+  align-items: center;
 }
 
 .slide-header {
@@ -766,6 +775,7 @@
   display: grid;
   gap: 18px;
   margin-top: 22px;
+  width: 100%;
 }
 
 .note-slider {
@@ -812,7 +822,7 @@
   display: grid;
   min-height: 168px;
   place-items: center;
-  max-height: 168px;
+  max-height: 250px;
   border: 1px solid rgba(248, 198, 78, 0.2);
   border-radius: 8px;
   background:
@@ -829,7 +839,7 @@
 }
 
 .note-lock-open .note-paper {
-  max-height: 760px;
+  max-height: 1200px;
   display: block;
   background:
     linear-gradient(30deg, rgba(248, 198, 78, 0.1) 12%, transparent 12% 88%, rgba(248, 198, 78, 0.1) 88%),
@@ -873,6 +883,13 @@
   padding-bottom: 46px;
 }
 
+.birthday-shell-note,
+.memory-shell,
+.closing-shell {
+  align-items: flex-start;
+  text-align: left;
+}
+
 .media-section-heading h2 {
   margin-top: 12px;
   max-width: 32rem;
@@ -895,6 +912,40 @@
   display: grid;
   gap: 16px;
   margin-top: 26px;
+}
+
+.font-im-fell,
+.font-im-fell * {
+  font-family: 'Great Vibes', 'Georgia', serif !important;
+}
+
+.note-lock-open .note-paper p {
+  font-size: 1.3rem;
+  line-height: 2;
+}
+
+.note-lock-open .note-paper .note-name {
+  font-size: 2.8rem;
+}
+
+.note-lock-open .note-paper .note-signature {
+  font-size: 2.4rem !important;
+}
+
+.birthday-hero h1 {
+  justify-items: center;
+}
+
+.birthday-intro {
+  margin-inline: auto;
+}
+
+.candle-button {
+  text-align: center;
+}
+
+.cake-wrap {
+  margin-inline: auto;
 }
 
 .media-card {

@@ -26,7 +26,7 @@ export function BirthdayWish() {
             May this new year feel like the universe finally turned the volume
             up for you.
           </h2>
-          <div className="mx-auto mt-9 max-w-3xl rounded-[8px] border border-white/18 bg-white/[0.08] p-6 text-left shadow-[0_30px_90px_rgba(0,0,0,0.26)] backdrop-blur sm:p-8">
+          <div className="mx-auto mt-9 max-w-3xl rounded-[8px] border border-white/18 bg-white/8 p-6 text-left shadow-[0_30px_90px_rgba(0,0,0,0.26)] backdrop-blur sm:p-8">
             <Sparkles className="mb-6 size-8 text-[#ffde3b]" />
             <p className="text-pretty text-xl font-semibold leading-9 text-white/84 sm:text-2xl">
               More peace than pressure. More money than stress. More laughter

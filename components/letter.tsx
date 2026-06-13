@@ -8,7 +8,7 @@ export function Letter() {
           <p className="mb-4 text-xs uppercase tracking-[0.4em] text-muted-foreground">
             Read this slowly
           </p>
-          <h2 className="font-serif text-4xl font-medium leading-tight text-foreground sm:text-5xl md:text-6xl">
+          <h2 className="font-im-fell text-4xl leading-tight text-foreground sm:text-5xl md:text-6xl">
             A <span className="italic text-primary">letter</span>
           </h2>
         </Reveal>
@@ -19,9 +19,19 @@ export function Letter() {
             style={{
               backgroundImage:
                 'repeating-linear-gradient(transparent, transparent 38px, oklch(0.89 0.025 70 / 0.35) 39px)',
+              backgroundBlendMode: 'multiply',
             }}
           >
-            <div className="font-serif text-lg leading-[2.45rem] text-card-foreground sm:text-xl">
+            {/* Ink-fade vignette */}
+            <div
+              className="pointer-events-none absolute inset-0 rounded-[1.75rem]"
+              style={{
+                background:
+                  'radial-gradient(ellipse at center, transparent 60%, oklch(0.78 0.04 70 / 0.18) 100%)',
+              }}
+            />
+
+              <div className="font-im-fell relative text-lg leading-[2.45rem] text-card-foreground sm:text-xl">
               <p className="mb-6">Dear Amaka,</p>
               <p className="mb-6">
                 I&apos;ve started this letter about four times because no
@@ -49,7 +59,9 @@ export function Letter() {
               </p>
               <p className="text-right">
                 Always,
-                <span className="mt-2 block text-3xl italic text-primary sm:text-4xl">
+                <span
+                  className="mt-2 block text-3xl italic text-primary sm:text-4xl"
+                >
                   Tolu
                 </span>
               </p>
